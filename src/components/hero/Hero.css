@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.hero .info .job {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 20px 0;
+  width: 30rem;
+  line-height: 5rem;
+}
+
+.hero .info .name {
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  color: rgba(150, 93, 240, 0.541);
+  font-weight: 300;
+}
+
+.hero .imgSection img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movingText {
+  position: absolute;
+}
+
+.hero .info .btns {
+  margin-top: 50px;
+}
+
+.hero .info .btns .worksBtn {
+  background-color: transparent;
+  color: inherit;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  margin-right: 10px;
+}
+
+.hero .info .btns .contactBtn {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  border: 1px solid #fff;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.hero .info .btns a:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero .info .job {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 4rem;
+  }
+
+  .hero .imgSection {
+    margin: 20px auto;
+  }
+
+  .hero .imgSection img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero .info .btns {
+    display: none;
+  }
+}
